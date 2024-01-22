@@ -1,0 +1,23 @@
+h1 {
+  color: #800080;
+  background-color: #585353;
+  font-size: 50px;
+  border: 2px solid green;
+}
+
+body {
+  background-image: url("https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/07/GettyImages-1410628268-e1658856009637.jpg?w=876&h=484&crop=1");
+  background-repeat: no-repeat; /* irá fazer com que apareça apenas uma imagem e não se repita*/
+  background-size: cover; /* cover significa capa, vai ajustar a imagem do tamanhio do seu site*/
+}
+.linhas {
+  color: orange;
+}
+#europa-text {
+  color: red;
+}
+
+* {
+  color: red;
+  border: 1px blue solid;
+}

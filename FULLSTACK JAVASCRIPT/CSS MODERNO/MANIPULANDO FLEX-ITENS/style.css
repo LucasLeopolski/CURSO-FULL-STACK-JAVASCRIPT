@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* vai dar um alinhamento melhor quando colocarmos as margens e espaçamentos.*/
+}
+.container {
+  background-color: darkgray;
+  min-height: 100vh; /*altura minima que terá o container*/ /*vh é mais responsivo que pixels, As unidades vh e vw significam viewport, sendo a primeira para altura e a segunda para largura. Isso significa que elas utilizam o tamanho total da viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100vh corresponde a 100% da página total, do nosso corpo do documento (body)*/
+  display: flex; /* display é a propriedade de como os itens são organizados*/
+  /* flex-direction: column; /* manipulação que deixará os itens em colunas, um em cima do outro*/
+  /*flex-direction: row; Os itens ficarão no meio da tela. */
+  /*row-gap: 15px; /*cada um dos itens é considerado um linha, row-gap é o espaçamento entre as linhas. */
+  /*column-gap: 15px; /* espaçamento entre as colunas*/
+  gap: 0px 15px;
+  justify-content: center; /* Vai centralizar os itens horizontalmente*/ /*alinhar os elementos ao longo do eixo principal (main-axis), cuja direção (row ou column) é definida a partir da propriedade flex-direction.*/
+  align-items: center;
+  flex-direction: column;
+  /*flex-wrap: wrap; /*define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas*/
+}
+.item {
+  width: 200px;
+  height: 70px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex; /* estes três comandos, display, justify-content, e align- itens, vão alinhar o conteúdo do container, no caso a escrita, ITEM 1 no meio do container.*/
+  justify-content: center;
+  align-items: center;
+  /* flex-basis: 200px; /* é o tamanho básico do item, para ele ser ativado temos que remover o width. */
+  /* flex-grow: 1; /* é a forma de aumentar o tamanho dos itens sem que eles quebrem de forma imediata.  Ele irá fazer com que os itens ocupem toda a tela, e irá quebrar quando a tela chegar me 200px( unidade que especificamos a cima.)*/
+}
+.item1 {
+  align-self: flex-end; /* É o alinhamento próprio nesse caso, o item vai para op final do body, é muito util este comando qundo queremos esditar apenas um dos itens, mas para isso precisamos que o flex-direction: column esteja como column e o width em px e não em %*/
+  /*flex-shrink: 2; /* está ligado a diminuiçao dos itens valor padrão é 1, se colocamos 2 significa ( neste caso que o item 1 irá diminuir mais que os outros). Para vermos melhor temos que tirar o flex-wrap: wrap*/
+}
+
+.item2 {
+  /*flex: 1 0 200px;   para resumir: está formatação é utilizada para substituir o flex-grow, flex-shrink e flex-basis, cada um número da formatação corresponde a cada um dos itens citados, respectivamente.*/
+}
+
+.item3 {
+}

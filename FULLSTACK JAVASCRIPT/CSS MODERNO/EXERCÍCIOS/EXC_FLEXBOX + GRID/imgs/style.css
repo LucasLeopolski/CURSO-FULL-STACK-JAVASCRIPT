@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.logoNavBar {
+  width: 180px;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles; */
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 8px 15px; /* quando diminuir a tela os itens não irão se encostar, gap horizontal e vertical*/
+}
+.headerBtnGroup {
+  display: flex;
+  gap: 15px; /*espaçamento entre os botões*/
+}
+.navBtn {
+  font-size: 16px;
+  padding: 6px;
+  background-color: transparent; /* vai fazer com que o fundo do botão fique transparente, */
+  border: 2px solid transparent; /* a borda ficará transparente, botão ficará mais bonito. */
+  color: #cd083c; /* cor logo onebitcode*/
+  cursor: pointer;
+  transition: 1s;
+}
+.navBtn:hover {
+  /*fará que quando passarmos o cursor do mouse em cima dos botões, ficará sublinhado*/
+  border-bottom: 2px solid black;
+}
+.sectionTitle {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px; /*Título vai ficar mais longe do topo*/
+}
+.sectionDescription {
+  text-align: center;
+  color: #383838;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "mainContent sidebarContent";
+  padding: 20px;
+  flex: 1 0 auto;
+}
+.mainCardImg {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.sidebarCardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* usada para arredondar a borda de um elemento. */
+}
+.categoryCard {
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer; /* vai ser o que vai aparcer a "mãozinha e nã oa seta na hora que passar o mouse em cima da imagem */
+}

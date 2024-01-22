@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px; /*padding é o espçamento do item com as bordas*/
+  align-items: center;
+}
+.logo-rock {
+  width: 40px;
+}
+.logo-onebitcode {
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttonHeader {
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px; /*Border radius: vai deixar o botão com um aspecto mais arredondado, sem os cantos quadrados*/
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer; /*o botão fica ativo, quando passamos o curssor do mouse por sima aparece a "mãozinha" inicando que podemos clicar nele*/
+  transition: 0.4s; /* é o tempo que levará para aparecer a cor do hover ( no caso da borda) que está abaixo)*/
+}
+/*.buttonHeader :hover {
+  /*o botão ficará com o conteúdo em azul
+  color: blue;
+}*/
+
+.buttonHeader:hover {
+  border-color: #ff0044;
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* vai dar um alinhamento melhor quando colocarmos as margens e espaçamentos.*/
+}
+.container {
+  background-color: darkgray;
+  min-height: 100vh; /*autura minima que terá o container*/ /*vh é mais responsivo que pixels, As unidades vh e vw significam viewport, sendo a primeira para altura e a segunda para largura. Isso significa que elas utilizam o tamanho total da viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100vh corresponde a 100% da página total, do nosso corpo do documento (body)*/
+  display: flex; /* display é a propriedade de como os itens são organizados*/
+  /* flex-direction: column; /* manipulação que deixará os itens em colunas, um em cima do outro*/
+  /*flex-direction: row; Os itens ficaram no meio da tela. */
+  /*row-gap: 15px; /*cada um dos itens é considerado um linha, row-gap é o espaçamento entre as linhas. */
+  column-gap: 15px; /* espaçamento entre as colunas*/
+  justify-content: center; /* Vai centralizar os itens horizontalmente*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex; /* estes três comandos, display, justify-content, e align- itens, vão alinhar o conteúdo do container, no caso a escrita, ITEM 1 no meio do container.*/
+  justify-content: center;
+  align-items: center;
+}
